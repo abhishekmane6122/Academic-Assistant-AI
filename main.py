@@ -21,14 +21,14 @@ safety_config = {
 # Model initialization
 llm = ChatGoogleGenerativeAI(
     model="gemini-1.5-flash",
-    google_api_key=st.secrets["secrets"]["GOOGLE_API_KEY"],
+    google_api_key=st.secrets["GOOGLE_API_KEY"],
     temperature=0.2,
     safety_settings=safety_config
 )
 
 embeddings = GoogleGenerativeAIEmbeddings(
     model="models/embedding-001",
-    google_api_key=st.secrets["secrets"]["GOOGLE_API_KEY"],
+    google_api_key=st.secrets["GOOGLE_API_KEY"],
     task_type="retrieval_document"
 )
 
