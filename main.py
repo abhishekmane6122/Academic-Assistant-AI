@@ -2,7 +2,7 @@ import streamlit as st
 import tempfile
 import os
 from langchain.prompts import PromptTemplate
-from langchain_community.vectorstores import Chroma
+from langchain_community.vectorstores import FAISS
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import PyPDFLoader
 from langchain.chains import RetrievalQA
@@ -125,12 +125,11 @@ def process_uploaded_file(uploaded_file):
 
 def initialize_qa_system(docs, subject):
     """Create vector store and QA chain for a subject"""
-    vector_db = Chroma.from_documents(
+    # Using FAISS instead of Chroma
+    vector_db = FAISS.from_documents(
         documents=docs,
-        embedding=embeddings,
-        persist_directory=f"/tmp/chroma_db/{subject.replace(' ', '_')}"  # Use /tmp directory
+        embedding=embeddings
     )
-    vector_db.persist()
     
     retriever = MultiQueryRetriever.from_llm(
         retriever=vector_db.as_retriever(search_kwargs={"k": 5}),
