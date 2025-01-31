@@ -6,3 +6,4 @@ pypdf
 google-generativeai
 python-dotenv
 faiss-cpu==1.8.0
+faiss-gpu
