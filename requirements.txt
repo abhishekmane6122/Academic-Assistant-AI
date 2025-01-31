@@ -5,5 +5,5 @@ langchain-google-genai
 pypdf
 google-generativeai
 python-dotenv
-faiss-cpu==1.8.0
+faiss-cpu
 faiss-gpu
