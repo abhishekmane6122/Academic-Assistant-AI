@@ -6,4 +6,3 @@ pypdf
 google-generativeai
 python-dotenv
 faiss-cpu
-faiss-gpu
