@@ -63,3 +63,47 @@ Imagine if you already have your class notes provided by your subject teacher, y
 
 ---
 
+# Academic Expert System 🎓
+
+**A Smart Solution for Academic Q&A Using Your Course Materials**  
+*Powered by Gemini AI + LangChain + Streamlit*
+
+![Demo](https://via.placeholder.com/800x400?text=Academic+QA+System+Demo)  
+*Replace with actual demo GIF*
+
+## 📖 Problem Statement: Why I Built This
+As a student, I constantly face these challenges:
+1. **Manual Cross-Checking**: When solving question papers, I need to:
+   - Type questions into ChatGPT
+   - Search same questions on Google
+   - Verify answers against multiple PDF notes
+2. **PDF Navigation Issues**:
+   - Teachers' notes often contain redundant text
+   - Hard to find exact answers in lengthy PDFs
+   - Page numbers don't always match between materials
+
+**Solution**: This tool lets you:
+- 📤 Upload question papers + reference PDFs
+- ❓ Ask subject-specific questions
+- 🚀 Get instant answers verified against **your materials**
+- 🔍 See exact PDF sources with page numbers
+
+## ✨ Key Features
+| Feature | Description |
+|---------|-------------|
+| 📚 Multi-Subject Support | NLP, Computer Vision, Data Engineering, Blockchain, Time Series Analysis |
+| 🔄 PDF Intelligence | Processes notes to create subject-specific knowledge base |
+| 🧠 Context-Aware AI | Combines Gemini's NLP with your materials' context |
+| 📊 Technical Response Formatting | Matrices, equations, code snippets, research references |
+| 🛡️ Safety-First AI | Content filtering for educational integrity |
+
+## 🛠️ Tech Stack
+**Core Components**:
+- `Google Gemini 1.5 Flash` - AI reasoning engine
+- `LangChain` - Document processing & retrieval
+- `FAISS` - Vector similarity search
+- `Streamlit` - Web interface
+
+**Supporting Libraries**:
+```python
+PyPDFLoader, RecursiveCharacterTextSplitter, MultiQueryRetriever, GoogleGenerativeAIEmbeddings
