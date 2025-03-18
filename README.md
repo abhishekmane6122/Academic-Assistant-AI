@@ -8,21 +8,6 @@ Welcome to the **Academic Expert System** – an all-in-one canvas solution desi
 
 This repository contains a **Streamlit** application that integrates advanced AI models with state-of-the-art document retrieval. The tool is specifically tailored for subjects like **Natural Language Processing**, **Advanced Computer Vision**, **Data Engineering**, **Blockchain Technology**, and **Time Series Forecasting**. It leverages Google’s Gemini-1.5-flash model alongside a FAISS-based vector database, providing an interactive, fast, and reliable way to extract the right answer from your uploaded materials. 
 
----
-
-## 📝 Problem Statement
-
-I built this tool because the traditional approach to solving question papers is time-consuming and often cumbersome. Here’s the usual process:
-  
-- **Step 1:** Type the question into ChatGPT.  
-  ➡️ **Step 2:** Search for answers on Google.  
-  ➡️ **Step 3:** Cross-check with multiple websites and class notes PDFs.
-
-This multi-step process can be overwhelming, especially when your class notes contain extra, unnecessary text that doesn't directly contribute to the exam answer. With this tool, you can simply **upload your question paper and your notes PDF** and get a consolidated, accurate answer quickly! ⚡
-
-Imagine if you already have your class notes provided by your subject teacher, yet you still need to sift through the PDF to extract just the relevant answers for your exam. This tool helps you cut through the noise and fetch only what you need. No more redundant text – just the essential, exam-ready answer! 🎯
-
----
 
 ## 🔍 Key Features
 
@@ -81,6 +66,11 @@ As a student, I constantly face these challenges:
    - Teachers' notes often contain redundant text
    - Hard to find exact answers in lengthy PDFs
    - Page numbers don't always match between materials
+
+This multi-step process can be overwhelming, especially when your class notes contain extra, unnecessary text that doesn't directly contribute to the exam answer. With this tool, you can simply **upload your question paper and your notes PDF** and get a consolidated, accurate answer quickly! ⚡
+
+Imagine if you already have your class notes provided by your subject teacher, yet you still need to sift through the PDF to extract just the relevant answers for your exam. This tool helps you cut through the noise and fetch only what you need. No more redundant text – just the essential, exam-ready answer! 🎯
+
 
 **Solution**: This tool lets you:
 - 📤 Upload question papers + reference PDFs
