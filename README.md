@@ -63,11 +63,3 @@ Imagine if you already have your class notes provided by your subject teacher, y
 
 ---
 
-## 🚀 Getting Started
-
-Follow these steps to run the application locally:
-
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/your-username/academic-expert-system.git
-   cd academic-expert-system
