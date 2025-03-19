@@ -3,11 +3,28 @@
 Welcome to the **Academic Expert System** – an all-in-one canvas solution designed to help you quickly get precise answers for your subject-specific questions by simply uploading your question papers and notes PDFs! 🚀
 
 ---
+## 📖 Problem Statement: Why I Built This
+As a student, I constantly face these challenges:
+1. **Manual Cross-Checking**: When solving question papers, I need to:
+   - Type questions into ChatGPT
+   - Search same questions on Google
+   - Verify answers against multiple PDF notes
+2. **PDF Navigation Issues**:
+   - Teachers' notes often contain redundant text
+   - Hard to find exact answers in lengthy PDFs
+   - Page numbers don't always match between materials
 
-## 🌟 Overview
+This multi-step process can be overwhelming, especially when your class notes contain extra, unnecessary text that doesn't directly contribute to the exam answer. With this tool, you can simply **upload your question paper and your notes PDF** and get a consolidated, accurate answer quickly! ⚡
 
-This repository contains a **Streamlit** application that integrates advanced AI models with state-of-the-art document retrieval. The tool is specifically tailored for subjects like **Natural Language Processing**, **Advanced Computer Vision**, **Data Engineering**, **Blockchain Technology**, and **Time Series Forecasting**. It leverages Google’s Gemini-1.5-flash model alongside a FAISS-based vector database, providing an interactive, fast, and reliable way to extract the right answer from your uploaded materials. 
+Imagine if you already have your class notes provided by your subject teacher, yet you still need to sift through the PDF to extract just the relevant answers for your exam. This tool helps you cut through the noise and fetch only what you need. No more redundant text – just the essential, exam-ready answer! 🎯
 
+**Solution**: This tool lets you:
+- 📤 Upload question papers + reference PDFs
+- ❓ Ask subject-specific questions
+- 🚀 Get instant answers verified against **your materials**
+- 🔍 See exact PDF sources with page numbers
+
+--- 
 
 ## 🔍 Key Features
 
@@ -26,7 +43,27 @@ This repository contains a **Streamlit** application that integrates advanced AI
 - **All-In-One Canvas Layout:**  
   The interactive, canvas-style layout in Streamlit organizes each subject’s portal neatly, allowing you to switch effortlessly between subjects and review detailed responses alongside reference materials. 🎨
 
+## ✨ Key Features
+| Feature | Description |
+|---------|-------------|
+| 📚 Multi-Subject Support | NLP, Computer Vision, Data Engineering, Blockchain, Time Series Analysis |
+| 🔄 PDF Intelligence | Processes notes to create subject-specific knowledge base |
+| 🧠 Context-Aware AI | Combines Gemini's NLP with your materials' context |
+| 📊 Technical Response Formatting | Matrices, equations, code snippets, research references |
+| 🛡️ Safety-First AI | Content filtering for educational integrity |
+
+## 🛠️ Tech Stack
+**Core Components**:
+- `Google Gemini 1.5 Flash` - AI reasoning engine
+- `LangChain` - Document processing & retrieval
+- `FAISS` - Vector similarity search
+- `Streamlit` - Web interface
+
+**Supporting Libraries**:
+```python
+PyPDFLoader, RecursiveCharacterTextSplitter, MultiQueryRetriever, GoogleGenerativeAIEmbeddings
 ---
+``` 
 
 ## 🔄 How It Works
 
@@ -48,52 +85,6 @@ This repository contains a **Streamlit** application that integrates advanced AI
 
 ---
 
-# Academic Expert System 🎓
-
-**A Smart Solution for Academic Q&A Using Your Course Materials**  
-*Powered by Gemini AI + LangChain + Streamlit*
-
-![Demo](https://via.placeholder.com/800x400?text=Academic+QA+System+Demo)  
-*Replace with actual demo GIF*
-
-## 📖 Problem Statement: Why I Built This
-As a student, I constantly face these challenges:
-1. **Manual Cross-Checking**: When solving question papers, I need to:
-   - Type questions into ChatGPT
-   - Search same questions on Google
-   - Verify answers against multiple PDF notes
-2. **PDF Navigation Issues**:
-   - Teachers' notes often contain redundant text
-   - Hard to find exact answers in lengthy PDFs
-   - Page numbers don't always match between materials
-
-This multi-step process can be overwhelming, especially when your class notes contain extra, unnecessary text that doesn't directly contribute to the exam answer. With this tool, you can simply **upload your question paper and your notes PDF** and get a consolidated, accurate answer quickly! ⚡
-
-Imagine if you already have your class notes provided by your subject teacher, yet you still need to sift through the PDF to extract just the relevant answers for your exam. This tool helps you cut through the noise and fetch only what you need. No more redundant text – just the essential, exam-ready answer! 🎯
 
 
-**Solution**: This tool lets you:
-- 📤 Upload question papers + reference PDFs
-- ❓ Ask subject-specific questions
-- 🚀 Get instant answers verified against **your materials**
-- 🔍 See exact PDF sources with page numbers
 
-## ✨ Key Features
-| Feature | Description |
-|---------|-------------|
-| 📚 Multi-Subject Support | NLP, Computer Vision, Data Engineering, Blockchain, Time Series Analysis |
-| 🔄 PDF Intelligence | Processes notes to create subject-specific knowledge base |
-| 🧠 Context-Aware AI | Combines Gemini's NLP with your materials' context |
-| 📊 Technical Response Formatting | Matrices, equations, code snippets, research references |
-| 🛡️ Safety-First AI | Content filtering for educational integrity |
-
-## 🛠️ Tech Stack
-**Core Components**:
-- `Google Gemini 1.5 Flash` - AI reasoning engine
-- `LangChain` - Document processing & retrieval
-- `FAISS` - Vector similarity search
-- `Streamlit` - Web interface
-
-**Supporting Libraries**:
-```python
-PyPDFLoader, RecursiveCharacterTextSplitter, MultiQueryRetriever, GoogleGenerativeAIEmbeddings
